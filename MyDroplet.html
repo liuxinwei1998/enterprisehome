@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="ExternalStyle.css">
+    <link rel="short icon" href="Resource/icon.png">
+    <title>刘鑫炜</title>
+    <style>
+        .ex{
+            position: relative;/**/
+        }
+        .in{
+            left: 50%;
+            top: 50%;
+            width: 66px;
+            height: 120px;
+            margin-left: -33px;
+            margin-top: -60px;
+            position: absolute;
+            text-align: center;
+        }
+        .in button{
+            background: rgb(32,132,204);
+            border: none;
+        }
+        .bottom{
+            width: 100%;
+        }
+        .inner{
+            width: 90%;
+            height: 50px;
+            line-height: 50px;
+            margin: 10px auto;/*上下为10，左右居中*/
+            border: 1px solid #cccccc;/*边框为1px，实线，颜色为#cccccc*/
+            border-radius: 5px;/*边框圆角状态*/
+        }
+        .left{
+            float: left;/*浮动在最左边*/
+            margin-left: 10px;
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+        .right{
+            float: right;
+            margin-right: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <span>我的小滴</span>
+</header>
+<div class="ex">
+    <img src="Resource/banner5.png" alt="" width="100%">
+    <div class="in">
+        <img src="Resource/head.png" alt="">
+        <span style="display: block" id="M_userName"></span>
+        <button onclick="down()">退出登录</button>
+        <script>
+            document.getElementById("M_userName").innerHTML =window.localStorage.getItem("userName");//调用数据
+            var down =function () {
+                window.localStorage.removeItem("userName");//删除数据
+                window.location.href = "Login.html";
+            }
+        </script>
+    </div>
+</div>
+<section class="small_div">
+    <div class="bottom">
+        <div class="inner">
+            <img src="Resource/gr_1.png" alt="" class="left">
+            <span>我的客户</span>
+            <img src="Resource/jt.png" alt="" class="right">
+        </div>
+        <div class="inner">
+            <img src="Resource/gr_2.png" alt="" class="left">
+            <span>查询余额</span>
+            <img src="Resource/jt.png" alt="" class="right">
+        </div>
+        <div class="inner">
+            <img src="Resource/gr_3.png" alt="" class="left">
+            <span>历史记录</span>
+            <img src="Resource/jt.png" alt="" class="right">
+        </div>
+        <div class="inner">
+            <img src="Resource/gr_4.png" alt="" class="left">
+            <span>修改密码</span>
+            <img src="Resource/jt.png" alt="" class="right">
+        </div>
+    </div>
+</section>
+<footer>
+        <a href="DropletService.html"><img src="Resource/nav10.png" alt=""><span>小滴服务</span></a>
+        <a href="EnterpriseProject1.html"><img src="Resource/nav20.png" alt=""><span>企业项目</span></a>
+        <a href="ServiceProcess.html"><img src="Resource/nav30.png" alt=""><span>服务流程</span></a>
+        <a href="PlatformPresence.html"><img src="Resource/nav40.png" alt=""><span>平台风采</span></a>
+        <a href="MyDroplet.html"><img src="Resource/nav51.png" alt=""><span class="red">我的小滴</span></a>
+</footer>
+</body>
+</html>

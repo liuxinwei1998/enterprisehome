@@ -1,0 +1,71 @@
+/*在css中注释先写再ctrl+/*/
+*{/*用“*”表示当前页面所有部分*/
+    margin:0;
+    padding:0;
+}
+body{
+    background: rgb(244,244,246);/*标签写法：标签{属性（键：值）}*/
+    padding-top: 44px;
+    padding-bottom: 49px;
+}
+header{
+    background: rgb(40,133,202);
+    color:white;/*字体颜色*/
+    font-size: 18px;/*字体大小*/
+    text-align: center;
+    line-height: 44px;/*行高*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;/*固定操作*/
+    z-index: 999;/*层次，值越大越往上*/
+}
+footer {
+    display: table;
+    background: black;
+    height: 49px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+footer a{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;/*文字装饰*/
+}
+footer a span{
+    display: block;
+    font-size: 12px;
+}
+footer img{
+    width: 18px;
+}
+.top_section img{
+    width:100%;/*100%代表铺满整个屏幕*/
+    margin-bottom: -6px;
+}
+.red{
+    color: red;
+}
+.EP_top{
+    display: table;
+    line-height: 40px;
+    width: 100%;
+    background: rgb(244,244,246);
+    left: 0;
+    top: 44px;
+    position: fixed;
+}
+.EP_top a{
+    display: table-cell;
+    width: 33.3%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+}
